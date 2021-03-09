@@ -18,6 +18,10 @@ public class User {
 		this.password = password;
 	}
 
+	public void addFlight(Flight fly) {
+		this.flights.add(fly);
+	}
+
 	public String getName() {
 		return name;
 	}
