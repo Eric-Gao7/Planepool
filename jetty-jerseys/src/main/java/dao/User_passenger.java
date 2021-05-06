@@ -2,8 +2,11 @@ package dao;
 
 import java.util.List;
 
+import javax.jdo.annotations.PersistenceCapable;
+
+@PersistenceCapable
 public class User_passenger extends User {
-	
+
 	public User_passenger(String name, String password) {
 		super(name, password);
 		// TODO Auto-generated constructor stub

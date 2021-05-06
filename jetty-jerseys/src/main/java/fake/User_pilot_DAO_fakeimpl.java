@@ -4,32 +4,24 @@ import java.util.List;
 
 import dao.Flight;
 import dao.User;
-import dao.User_pilot;
+import dao.User_pilot_DAO;
 
-public class User_pilot_DAO_fakeimpl {
+public class User_pilot_DAO_fakeimpl implements User_pilot_DAO {
 
-	void deleteFlightp(String name) {
-
-	}
-
-	void postInformation(String Information) {
+	public void deleteFlightp(String name) {
 
 	}
 
-	void putRequest(boolean answer) {
+	public void postInformation(String Information) {
 
 	}
 
-	List<User> getPassenger(Flight flight) {
+	public void putRequest(boolean answer) {
 
-		User a = new User_pilot("ttti", "tata");
-		Flight b = new Flight("first_fly");
-		a.addFlight(b);
-		for (Flight f : a.getFlights()) {
-			if (f.getName().equals(flight.getName())) {
-				return f.getUsers();
-			}
-		}
+	}
+
+	public List<User> getPassenger(Flight flight) {
+
 		return null;
 
 	}

@@ -2,12 +2,22 @@ package dao;
 
 import java.util.List;
 
+import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.PrimaryKey;
+
+@PersistenceCapable
 public class Flight {
 
+	@PrimaryKey
+	@Persistent(valueStrategy = IdGeneratorStrategy.NATIVE)
+	protected Long id = null;
 	private String name;
 	private String pilot_profile;
 	private int place;
 	private int duration;
+	private int date;
 	private int price;
 	private String journey_information;
 	private String added_information;
@@ -17,9 +27,19 @@ public class Flight {
 	public boolean accept;
 	private List<User> users;
 
+	List<Flight> search(String date, String departure) {
+
+		return null;
+
+	}
+
 	public Flight(String name) {
 		super();
 		this.name = name;
+	}
+
+	public Flight() {
+		// TODO Auto-generated constructor stub
 	}
 
 	public boolean isAccept() {
@@ -118,11 +138,20 @@ public class Flight {
 		this.name = name;
 	}
 
-	/*
-	 * public User getUser(String passenger) { User a = null; for (this.users: User
-	 * e) {
-	 * 
-	 * } return a; }
-	 */
+	public int getDate() {
+		return date;
+	}
+
+	public void setDate(int date) {
+		this.date = date;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
 
 }

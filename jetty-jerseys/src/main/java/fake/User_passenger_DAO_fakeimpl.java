@@ -1,14 +1,15 @@
 package fake;
 
 import dao.Flight;
+import dao.User_passenger_DAO;
 
-public class User_passenger_DAO_fakeimpl {
+public class User_passenger_DAO_fakeimpl implements User_passenger_DAO {
 
-	void deleteflight(String flight) {
+	public void deleteflight(String flight) {
 
 	}
 
-	void putflight(Flight flight) {
+	public void putflight(Flight flight) {
 
 	}
 

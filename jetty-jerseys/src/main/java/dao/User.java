@@ -2,24 +2,32 @@ package dao;
 
 import java.util.List;
 
+import javax.jdo.annotations.IdGeneratorStrategy;
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+import javax.jdo.annotations.PrimaryKey;
+
+@PersistenceCapable
 public class User {
+
+	@PrimaryKey
+	@Persistent(valueStrategy = IdGeneratorStrategy.NATIVE)
+	protected Long id = null;
+
 	private String name;
 	private String password;
-	private int id;
-	private static int user_id = 1;
 	private String mail;
-	private int acces;
+	private boolean acces;
 	private String profile;
-	private List<Flight> flights;
+	private List<Flight> flights = null;
 
-	public User(String name, String password) {
-		this.id = user_id++;
-		this.name = name;
+	public User(String mail, String password) {
+		this.mail = mail;
 		this.password = password;
 	}
 
-	public void addFlight(Flight fly) {
-		this.flights.add(fly);
+	public User() {
+		// TODO Auto-generated constructor stub
 	}
 
 	public String getName() {
@@ -38,15 +46,15 @@ public class User {
 		this.password = password;
 	}
 
-	public int getId() {
-		return this.id;
+	public long getId() {
+		return (long) this.id;
 	}
 
-	public int getAcces() {
+	public boolean getAcces() {
 		return acces;
 	}
 
-	public void setAcces(int acces) {
+	public void setAcces(boolean acces) {
 		this.acces = acces;
 	}
 
