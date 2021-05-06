@@ -1,0 +1,54 @@
+.overlay{
+    /*Position figée et complète*/
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    /*Couleur Transparente*/
+    background-color: rgba(25, 25,36, 0.5);
+    /*Ne pas afficher*/
+    display: none;
+}
+
+.popup{
+    position: fixed;
+    margin: 10% 20%;
+    width: 60%;
+    height: 70%;
+    background-color: rgb(220, 220, 220);
+    border: 2px solid black;
+}
+
+#inscription,#connexion{
+    display: none;
+}
+
+.formulaire{    
+    margin-left: 15%;
+    width: 70%;
+    height: 50%;
+    margin-top: 0%;
+}
+
+.formulaire, .formulaire p{
+    flex-direction: column;
+    align-content: center; 
+    text-align: center;
+}
+
+p  .form1{
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid rgb(206, 124, 231);
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+
+.btnClose{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    font-size: 400%;
+    color: red;
+}

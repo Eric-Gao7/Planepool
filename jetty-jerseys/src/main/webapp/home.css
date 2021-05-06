@@ -1,0 +1,97 @@
+section#carroussel {
+
+    height: 300px;
+    background-image: url("avion.jpg");
+}
+
+section#carroussel div
+{
+    background-color: rgba(236, 233, 233, 0.205);
+    width: 50%;
+    height: 75%;
+    float: left;
+    margin-top: 3%;
+    margin-left: 25%;
+}
+
+section#carroussel div h1
+{
+    font-size: 300%;
+}
+
+section#carroussel div p
+{
+    font-size: 200%;
+}
+
+
+section#fonctionnement
+{
+    margin: 0 auto;
+    width: 100%;
+}
+
+section#etapes
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section#etapes div
+{
+    width: 30%;
+    border : solid 1px black;
+    
+}
+
+p.bulle{
+    background-color: red;
+    width: 10%;
+    font-size: 200%;
+    margin: auto;
+    border-radius: 50%;
+    margin-top: 3%;
+}
+
+
+#quisommesnous,#mission,#vision,#lefonctionnement,#tarifs{
+    margin-top: 2%;
+    border-top:solid 1px  black;
+}
+
+
+#quisommesnous section{
+    display: flex;
+}
+
+
+#quisommesnous section div{
+    width: 50%;
+}
+
+
+img#equipe{
+    width: 40%;
+    margin-top: 1%;
+}
+
+
+#mission,#vision,#lefonctionnement{
+    text-align: justify;
+}
+
+
+#liste{
+	margin-bottom: 2%;
+}
+
+
+.vol{
+    display: flex;
+    width: 100%;
+    border: 1px black solid;
+}
+
+.element{
+    width: 14%
+}

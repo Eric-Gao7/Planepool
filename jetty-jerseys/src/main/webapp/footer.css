@@ -1,0 +1,27 @@
+#footer{
+    background-color: rgb(238, 228, 179);
+    margin-top: 3%;
+    
+}
+
+#footer section{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+#footer section div{
+    width: 20%;}
+
+#footer h2{
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+}
+
+#footer a{
+    color: rgb(97, 94, 94);
+    font-size: 0.8em;
+}
+
+
+

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <title>PlanePool- Home</title>
+</head>
+
+<body>
+
+    <header>
+        <!--BOUTONS D'IDENTIFICATIONS-->
+        <div>
+
+            <button id="btnPopupInscription" class="btnPopup">Inscription</button>
+            <button id="btnPopupConnexion" class="btnPopup">Connexion</button>
+            <div id="overlay" class="overlay">
+
+                <section id="inscription" class="popup">
+
+
+                    <div id="inscrtiptionFormulaire" class="formulaire">
+                        <h2>Inscription</h2>
+                        
+                       
+                            <p>
+                                <input id="prenom" class="form1" type="text" placeholder="Prénom" />
+                                <input id="nom" class="form1" type="text" placeholder="Nom" />
+                                <input id="email" class="form1" type="email" placeholder="exemple@gmail.com" />
+
+                                <input id="mdp1" class="form1" type="password" placeholder="Tapez votre mot de passe" />
+                                <input id="mdp2" class="form1" type="password"
+                                    placeholder="Retapez votre mot de passe" />
+                                <br>
+                                <input type="checkbox" name="case" id="case" /> <label for="case">J'ai lu et j'accepte
+                                    les Conditions Générales d'Utilisation et la Politique de Protection des Données
+                                    Personnelles.</label>
+                                <br>
+                                <input type="submit" class="form1" value="Je m'inscris" />
+                            </p>
+                        </form>
+                    </div>
+                    <span id="btnCloseInscription" class="btnClose">&times;</span>
+                </section>
+                <section id="connexion" class="popup">
+                    <div id="connexionFormulaire" class="formulaire">
+                        <h2>Connexion</h2>
+                        <p>
+                            Connectez vous avec votre adresse e-mail
+                        </p>
+                        <form method="post" action="forminscription.php">
+                            <p>
+
+                                <input id="email" class="form1" type="email" placeholder="exemple@gmail.com" />
+
+                                <input id="mdp1" class="form1" type="password" placeholder="Tapez votre mot de passe" />
+
+                                <input type="submit" class="form1" value="Je me connecte" />
+                            </p>
+                        </form>
+                    </div>
+                    
+                    <span id="btnCloseConnexion" class="btnClose">&times;</span>
+                </section>
+            </div>
+
+        </div>
+
+        <!--Fin bouton telecharger-->
+        <img id="Logo" src="logo.JPG" />
+
+    </header>
+
+
+
+    <!-------------------------------------- Le corps ------------------------------------------------------------->
+
+
+    <section id="carroussel">
+        <div>
+            <h1>PlanePool</h1>
+            <p> CoPlaner jusqu'au bout du monde </p>
+        </div>
+
+    </section>
+
+    <section id="page">
+
+        <form method="post" action="#">
+            <p>
+                <input id="depart" class="recherche" type="text" placeholder="Départ" />
+                <input id="destination" class="recherche" type="text" placeholder="Destination" />
+                <input id="date" class="recherche" type="date" />
+                <input type="submit" class="recherche" value="Rechercher" />
+            </p>
+        </form>
+
+        <section id="liste">
+
+            <section class="vol">
+                <div class="element">Airbus</div>
+                <div class="element">Paris</div>
+                <div class="element">Londres</div>
+                <div class="element">07/05/2021</div>
+                <div class="element">16:25</div>
+                <div class="element">2 places</div>
+                <a href="index.html" class="element">Plus d'informations </a>
+            </section>
+
+            <section class="vol">
+                <div class="element">Airbus</div>
+                <div class="element">Paris</div>
+                <div class="element">Londres</div>
+                <div class="element">07/05/2021</div>
+                <div class="element">16:25</div>
+                <div class="element">2 places</div>
+                <a href="index.html" class="element">Plus d'informations </a>
+            </section>
+
+            <section class="vol">
+                <div class="element">Airbus</div>
+                <div class="element">Paris</div>
+                <div class="element">Londres</div>
+                <div class="element">07/05/2021</div>
+                <div class="element">16:25</div>
+                <div class="element">2 places</div>
+                <a href="index.html" class="element">Plus d'informations </a>
+            </section>
+
+            <section class="vol">
+                <div class="element">Airbus</div>
+                <div class="element">Paris</div>
+                <div class="element">Londres</div>
+                <div class="element">07/05/2021</div>
+                <div class="element">16:25</div>
+                <div class="element">2 places</div>
+                <a href="index.html" class="element">Plus d'informations </a>
+            </section>
+
+            <section class="vol">
+                <div class="element">Airbus</div>
+                <div class="element">Paris</div>
+                <div class="element">Londres</div>
+                <div class="element">07/05/2021</div>
+                <div class="element">16:25</div>
+                <div class="element">2 places</div>
+                <a href="index.html" class="element">Plus d'informations </a>
+            </section>
+
+
+        </section>
+
+
+
+    </section>
+
+    <!---------------------------------- Le pied de page ---------------------------------->
+
+    <section id="footer">
+        <section>
+            <div>
+                <h2>A propos de <h2>
+                <a href="https://openclassrooms.com">Qui sommes nous ?</a> <br/>
+                <a href="https://openclassrooms.com">Nos conditions</a> <br/>
+                <a href="https://openclassrooms.com">Sécurité</a>
+            </div>
+            <div>
+                <h2>Notre service<h2>
+                <a href="https://openclassrooms.com">Comment ça marche ?</a> <br/>
+                <a href="https://openclassrooms.com">Nous contacter</a> <br/>
+            </div>
+            <div>
+                <h2>Informations<h2>
+                <a href="https://openclassrooms.com">Mentions légales</a> <br/>
+                <a href="https://openclassrooms.com">Politique de confidentialité</a> <br/>
+                <a href="https://openclassrooms.com">CGU</a>
+            </div>
+            
+        </section>
+    </section>
+
+</body>
+
+<script src="popup.js"></script>
+
+</html>
