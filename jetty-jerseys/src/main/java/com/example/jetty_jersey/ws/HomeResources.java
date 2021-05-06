@@ -26,7 +26,6 @@ import dao.fao;
 @Path("/home")
 public class HomeResources {
 
-	// pas tester encore
 	@POST
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("/login")

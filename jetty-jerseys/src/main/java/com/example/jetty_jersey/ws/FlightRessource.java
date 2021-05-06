@@ -45,7 +45,7 @@ public class FlightRessource {
 
 	@POST
 	@Produces(MediaType.APPLICATION_JSON)
-	@Path("/information")
+	@Path("/informations")
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
 	public void postOtherinformation(@FormParam("id") long id, @FormParam("duration") int duration,
 			@FormParam("price") int price, @FormParam("added_information") String added_information,

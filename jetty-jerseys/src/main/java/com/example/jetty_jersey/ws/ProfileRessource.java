@@ -44,7 +44,6 @@ public class ProfileRessource {
 		return fao.getFlight_DAO().getFlight(id).getUsers();
 	}
 
-	// problem coloum
 	@PUT
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Path("/flight/{id}")
