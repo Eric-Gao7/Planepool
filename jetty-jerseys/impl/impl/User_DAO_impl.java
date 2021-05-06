@@ -114,7 +114,6 @@ public class User_DAO_impl implements User_DAO {
 			q.setFilter("mail == mails");
 			u = (List<User>) q.execute(mails);
 			detached = (List<User>) pm.detachCopyAll(u);
-			System.out.println();
 			tx.commit();
 		} finally {
 			if (((javax.jdo.Transaction) tx).isActive()) {
